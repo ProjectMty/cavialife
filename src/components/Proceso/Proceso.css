@@ -1,0 +1,90 @@
+@reference "tailwindcss";
+
+
+/* #region GRAPH */
+
+
+.contenedor-lineas-proceso {
+    @apply absolute inset-0 z-0 grid grid-cols-5 h-[23%]
+}
+
+.contenedor-lineas-abajo-proceso {
+    @apply absolute inset-0 z-0 grid grid-cols-5 h-[15%] translate-y-[525%]
+}
+
+.graph-linea-proceso {
+    @apply h-[100%] bg-[var(--graph-green)] w-[2px] justify-self-auto
+}
+
+.contenedor-lineas-horizontal-proceso {
+    @apply absolute inset-0 z-0 flex flex-col justify-end h-full
+}
+
+.contenedor-hor-proceso {
+    @apply grid grid-cols-5 h-[100%] items-end
+}
+
+.graph-linea-horizontal-proceso {
+    @apply h-[2px] bg-[var(--graph-green)] w-full bottom-0 left-0
+}
+
+
+
+/* #endregion */
+.section-proceso {
+    @apply w-[full] h-[1400px] bg-[var(--background)] overflow-hidden font-[MinionPro] relative
+}
+
+.contenedor-titulo-proceso {
+    @apply mt-10 mx-auto w-[50%] text-center
+}
+
+.titulo-proceso {
+    @apply text-[55px] text-[var(--text-green)]
+}
+
+.subtitulo-proceso {
+    @apply text-[45px] text-[var(--text-grey)] font-extrabold leading-tight
+}
+
+.contenedor-imagenes-proceso {
+    @apply grid grid-cols-5 mt-[5%]
+}
+
+.fondo-imagenes-proceso {
+    @apply bg-[var(--foreground)] h-[48%] w-full inset-0 z-0 absolute translate-y-[75%]
+}
+
+.img1-proceso {
+    @apply z-20 relative col-span-2
+}
+
+.img2-proceso {
+    @apply z-20 relative
+}
+
+.img3-proceso {
+    @apply z-20 relative
+}
+
+.img4-proceso {
+    @apply z-20 relative col-span-2
+}
+
+@media (min-width: 2000px) {
+    .img1-proceso {
+        @apply z-20 relative translate-x-30 -translate-y-25
+    }
+
+    .img2-proceso {
+        @apply z-20 relative translate-x-15 -translate-y-25
+    }
+
+    .img3-proceso {
+        @apply z-20 relative translate-x-30 -translate-y-20
+    }
+
+    .img4-proceso {
+        @apply z-20 relative col-span-2  translate-x-38 -translate-y-20
+    }
+}

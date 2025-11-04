@@ -1,0 +1,86 @@
+@reference "tailwindcss";
+
+.section-soluciones {
+    @apply w-[full] h-[900px] bg-[var(--background)] overflow-visible font-[MinionPro] relative
+
+}
+
+.contenedor-titulo-soluciones{
+    @apply mx-auto w-[50%] text-center mb-10
+}
+.titulo-soluciones{
+    @apply text-[50px] text-[var(--text-green)]  
+}
+
+.contenedor-inf-soluciones{
+    @apply grid grid-cols-5
+}
+
+.cuandro-inf-soluciones{
+    @apply shadow-[2px_2px_10px_rgba(0,0,0,0.3)] p-5 m-2 mx-6 text-center
+}
+
+.titulo-inf-soluciones{
+    @apply text-[30px] text-[var(--text-green)] text-center font-medium
+}
+
+.contenedor-boton-soluciones{
+    @apply  mx-auto w-[50%] text-center m-10  relative
+}
+
+.boton-cotiza-soluciones{
+    @apply w-[35%] bg-[#99b1af] h-[60px] rounded-[50px]
+    shadow-[2px_5px_5px_rgba(0,0,0,0.5)]
+    text-white text-[25px] z-40 relative
+    hover:bg-[var(--text-green)] transition duration-300
+}
+
+.fondo-imagenes-soluciones{
+    @apply bg-[var(--foreground)] h-[28%] w-full inset-0 z-0 absolute
+    translate-y-[230%]
+}
+
+.img-soluciones{
+    @apply z-20 relative col-span-3 scale-105
+}
+/* #region GRAPH */
+
+.contenedor-lineas-soluciones {
+    @apply absolute inset-0 z-0 grid grid-cols-5 -translate-y-[10%] 
+}
+
+.graph-linea-soluciones {
+    @apply h-[80%] bg-[var(--graph-green)] w-[2px] justify-self-auto
+}
+
+.graph-linea-mitad-soluciones {
+    @apply h-[25%] bg-[var(--graph-green)] w-[2px] justify-self-auto 
+    translate-y-[95%]
+}
+
+.contenedor-lineas-horizontal-soluciones {
+    @apply  absolute inset-0 z-0  flex flex-col justify-end  h-[48%]
+}
+.contenedor-hor-soluciones{
+    @apply grid grid-cols-5 h-[100%] items-end
+}
+.graph-linea-horizontal-soluciones {
+    @apply h-[2px] bg-[var(--graph-green)] w-full bottom-0 left-0
+}
+
+.contenedor-lineas-abajo-soluciones {
+    @apply absolute inset-0 z-0 grid grid-cols-5 h-[60%] translate-y-[109%]
+}
+
+.contenedor-lineas-abajo2-soluciones {
+    @apply absolute inset-0 z-0 grid grid-cols-5 h-[28%] translate-y-[389%]
+}
+
+/* #endregion */
+
+
+@media (min-width: 2000px) {
+.img-soluciones{
+    @apply z-20 relative col-span-3 scale-125 translate-y-6 translate-x-32
+}
+}

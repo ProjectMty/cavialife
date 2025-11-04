@@ -1,0 +1,55 @@
+@reference "tailwindcss";
+
+/* #region Contenido */
+.section-funciona {
+    @apply w-[full] h-[500px] bg-[var(--background)] overflow-hidden font-[MinionPro] relative
+}
+
+.contenedor-inf-funciona {
+    @apply grid-cols-5 grid
+}
+
+.img-funciona {
+    @apply my-20 px-2 
+}
+
+.contenedor-texo-funciona {
+    @apply flex flex-col col-span-2 p-10 py-[15%]
+}
+
+.titulo-texto-funciona {
+    @apply text-[50px] text-[var(--text-green)]
+}
+
+.texto-funciona {
+    @apply text-[22px] text-[var(--text-grey)] mt-5
+}
+/* #endregion */
+/* #region GRAPH */
+
+.contenedor-lineas-funciona {
+    @apply absolute inset-0 z-0 grid grid-cols-5
+}
+
+.graph-linea-funciona {
+    @apply h-full bg-[var(--graph-green)] w-[2px] justify-self-auto
+}
+
+.contenedor-lineas-horizontal-funciona {
+    @apply  absolute inset-0 z-0  flex flex-col justify-end h-full
+}
+.contenedor-hor-funciona{
+    @apply grid grid-cols-5 h-[100%] items-end
+}
+.graph-linea-horizontal-funciona {
+    @apply h-[2px] bg-[var(--graph-green)] w-full bottom-0 left-0
+}
+
+/* #endregion */
+
+@media (min-width: 2000px){
+   .img-funciona {
+    @apply my-26 scale-125 mx-16
+}
+
+}

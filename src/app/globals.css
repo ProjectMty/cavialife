@@ -1,8 +1,16 @@
 @import "tailwindcss";
 
+@tailwindcss base;
+@tailwindcss components;
+@tailwind utilities;
+
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #edeae0;
+  --text-grey: #242520;
+  --text-green: #013d36;
+  --graph-white:#dbdad5;
+  --graph-green: #aec1bf;
 }
 
 @theme inline {
@@ -12,15 +20,23 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
   background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+@font-face {
+  font-family: 'MinionPro';
+  src: url(../../public/fonts/MinionPro-Regular.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Premint';
+  src: url(../../public/fonts/premint-Regular.otf);
+  font-weight: normal;
+  font-style: normal;
 }

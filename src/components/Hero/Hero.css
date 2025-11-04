@@ -1,0 +1,39 @@
+@reference "tailwindcss";
+
+/* #region Contenido */
+.section-hero{
+    @apply w-[full] h-[700px] bg-[var(--foreground)] overflow-hidden font-[Premint] relative
+}
+
+.logo-hero{
+    @apply w-[7%] mt-5 mx-auto 
+}
+
+.img-hero{
+    @apply -translate-y-10 absolute
+}
+
+.contenedor-titulo-hero{
+    @apply w-[40%] ml-[21%] mt-[10%] z-20 relative
+}
+
+.title-hero{
+    @apply text-[var(--text-grey)] font-extralight text-[80px] z-20
+}
+/* #endregion */
+
+/* #region FONDO */
+.contenedor-lineas-hero{
+@apply absolute inset-0 z-0 grid grid-cols-5 
+}
+
+.graph-linea-hero{
+    @apply h-full bg-[var(--graph-white)] w-[2px]
+}
+/* #endregion */
+
+@media (min-width: 2000px){
+    .img-hero{
+    @apply translate-x-[25%]
+}
+}
