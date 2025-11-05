@@ -1,5 +1,10 @@
 @reference "tailwindcss";
 
+@media (min-width: 0px) and (max-width: 500px) {
+
+}
+@media (min-width: 1501px) and (max-width: 2000px) {
+
 .section-soluciones {
     @apply w-[full] h-[900px] bg-[var(--background)] overflow-visible font-[MinionPro] relative
 
@@ -44,6 +49,7 @@
     @apply z-20 relative col-span-3 scale-105
 }
 /* #region GRAPH */
+}
 
 .contenedor-lineas-soluciones {
     @apply absolute inset-0 z-0 grid grid-cols-5 -translate-y-[10%] 

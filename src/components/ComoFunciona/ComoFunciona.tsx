@@ -4,27 +4,37 @@ import "@/components/ComoFunciona/ComoFunciona.css"
 export default function ComoFunciona() {
     return (
         <section className="section-funciona">
+            {/* #region GRAFICOS */}
             <div className="contenedor-lineas-funciona">
-                <div className="graph-linea-funciona opacity-0" />
+                <div className="graph-linea-funciona linea-oculta" />
+                <div className="graph-linea-funciona linea-oculta-md" />
                 <div className="graph-linea-funciona" />
-                <div className="graph-linea-funciona" />
-                <div className="graph-linea-funciona  opacity-0" />
-                <div className="graph-linea-funciona" />
+                <div className="graph-linea-funciona linea-oculta" />
+                <div className="graph-linea-funciona linea-oculta-md" />
 
             </div>
             <div className="contenedor-lineas-horizontal-funciona">
                 <div className="contenedor-hor-funciona">
-                    <div className="graph-linea-horizontal-funciona opacity-0" />
+                    <div className="graph-linea-horizontal-funciona linea-oculta-horizontal " />
                     <div className="graph-linea-horizontal-funciona" />
                     <div className="graph-linea-horizontal-funciona" />
                     <div className="graph-linea-horizontal-funciona" />
+                    <div className="graph-linea-horizontal-funciona linea-oculta-horizontal " />
                 </div>
-
-
             </div>
+            <div className="contenedor-lineas-horizontal-funciona-oculta">
+                <div className="contenedor-hor-funciona-oculta">
+                    <div className="graph-linea-horizontal-funciona-oculta " />
+                    <div className="graph-linea-horizontal-funciona" />
+                    <div className="graph-linea-horizontal-funciona" />
+                    <div className="graph-linea-horizontal-funciona" />
+                    <div className="graph-linea-horizontal-funciona-oculta " />
+                </div>
+            </div>
+            {/* #endregion */}
 
             <div className="contenedor-inf-funciona">
-                <div></div>
+                <div className="separacion-funciona"></div>
                 <Image
                     src="/ComoFunciona/div2.png"
                     alt="Logo"

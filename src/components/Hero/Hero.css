@@ -1,39 +1,138 @@
 @reference "tailwindcss";
 
 /* #region Contenido */
-.section-hero{
-    @apply w-[full] h-[700px] bg-[var(--foreground)] overflow-hidden font-[Premint] relative
+.section-hero {
+    @apply w-[full] h-[400px] bg-[var(--foreground)] overflow-hidden font-[Premint] relative
 }
 
-.logo-hero{
-    @apply w-[7%] mt-5 mx-auto 
+.logo-hero {
+    @apply w-[30%] mt-5 mx-[60%]
 }
 
-.img-hero{
-    @apply -translate-y-10 absolute
+.img-hero {
+    @apply translate-y-[60%] absolute scale-150
 }
 
-.contenedor-titulo-hero{
-    @apply w-[40%] ml-[21%] mt-[10%] z-20 relative
+.contenedor-titulo-hero {
+    @apply w-[50%] ml-[5%] mt-[20%] z-20 relative
 }
 
-.title-hero{
-    @apply text-[var(--text-grey)] font-extralight text-[80px] z-20
+.title-hero {
+    @apply text-[var(--text-grey)] font-extralight text-[40px] z-20
 }
+
 /* #endregion */
 
 /* #region FONDO */
-.contenedor-lineas-hero{
-@apply absolute inset-0 z-0 grid grid-cols-5 
+.contenedor-lineas-hero {
+    @apply absolute inset-0 z-0 grid grid-cols-5 h-full
 }
 
-.graph-linea-hero{
+.graph-linea-hero {
     @apply h-full bg-[var(--graph-white)] w-[2px]
 }
+
 /* #endregion */
 
-@media (min-width: 2000px){
-    .img-hero{
-    @apply translate-x-[25%]
+@media (min-width: 500px) {
+    /* #region Contenido */
+    .section-hero {
+        @apply w-[full] h-[400px] bg-[var(--foreground)] overflow-hidden font-[Premint] relative
+    }
+
+    .logo-hero {
+        @apply w-[16%] mt-10 mx-auto
+    }
+
+    .img-hero {
+        @apply translate-y-[0%] absolute scale-110
+    }
+
+    .contenedor-titulo-hero {
+        @apply w-[38%] ml-[20%] mt-[10%] z-20 relative
+    }
+
+    .title-hero {
+        @apply text-[var(--text-grey)] font-extralight text-[40px] z-20
+    }
+
+    /* #endregion */
 }
+
+
+@media (min-width: 1024px) {
+    /* #region Contenido */
+    .section-hero {
+        @apply w-[full] h-[500px] bg-[var(--foreground)] overflow-hidden font-[Premint] relative
+    }
+
+    .logo-hero {
+        @apply w-[10%] mt-5 mx-auto
+    }
+
+    .img-hero {
+        @apply -translate-y-[5%] translate-x-[2%] absolute scale-100
+    }
+
+    .contenedor-titulo-hero {
+        @apply w-[40%] ml-[21%] mt-[10%] z-20 relative
+    }
+
+    .title-hero {
+        @apply text-[var(--text-grey)] font-extralight text-[55px] z-20
+    }
+
+    /* #endregion */
+}
+
+@media (min-width: 1500px) {
+
+    /* #region Contenido */
+    .section-hero {
+        @apply w-[full] h-[700px] bg-[var(--foreground)] overflow-hidden font-[Premint] relative
+    }
+
+    .logo-hero {
+        @apply w-[7%] mt-5 mx-auto
+    }
+
+    .img-hero {
+        @apply -translate-y-[5%] translate-x-[2%] absolute scale-100
+    }
+
+    .contenedor-titulo-hero {
+        @apply w-[40%] ml-[21%] mt-[10%] z-20 relative
+    }
+
+    .title-hero {
+        @apply text-[var(--text-grey)] font-extralight text-[80px] z-20
+    }
+
+    /* #endregion */
+
+}
+
+@media (min-width: 2000px) {
+      /* #region Contenido */
+    .section-hero {
+        @apply w-[full] h-[700px] bg-[var(--foreground)] overflow-hidden font-[Premint] relative
+    }
+
+    .logo-hero {
+        @apply w-[7%] mt-5 mx-auto
+    }
+
+    .img-hero {
+        @apply -translate-y-[5%] translate-x-[25%] absolute scale-100
+    }
+
+    .contenedor-titulo-hero {
+        @apply w-[40%] ml-[21%] mt-[7%] z-20 relative
+    }
+
+    .title-hero {
+        @apply text-[var(--text-grey)] font-extralight text-[90px] z-20
+    }
+
+   
 }
