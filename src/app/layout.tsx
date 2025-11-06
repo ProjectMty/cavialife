@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Cavia",
   description: "Web Cavia",
     icons: {
-    icon: 'app/favicon.svg',
+    icon: '/img/favicon.svg',
   }
 };
 
