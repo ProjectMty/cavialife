@@ -1,90 +1,470 @@
 @reference "tailwindcss";
 
+@media (min-width: 0px) and (max-width: 500px) {
+    /* #region GRAPH */
 
-/* #region GRAPH */
-
-
-.contenedor-lineas-proceso {
-    @apply absolute inset-0 z-0 grid grid-cols-5 h-[23%]
-}
-
-.contenedor-lineas-abajo-proceso {
-    @apply absolute inset-0 z-0 grid grid-cols-5 h-[15%] translate-y-[525%]
-}
-
-.graph-linea-proceso {
-    @apply h-[100%] bg-[var(--graph-green)] w-[2px] justify-self-auto
-}
-
-.contenedor-lineas-horizontal-proceso {
-    @apply absolute inset-0 z-0 flex flex-col justify-end h-full
-}
-
-.contenedor-hor-proceso {
-    @apply grid grid-cols-5 h-[100%] items-end
-}
-
-.graph-linea-horizontal-proceso {
-    @apply h-[2px] bg-[var(--graph-green)] w-full bottom-0 left-0
-}
+    .linea-oculta {
+        @apply opacity-100
+    }
 
 
+    .contenedor-extra-1 {
+        @apply absolute inset-0 z-0 flex flex-col justify-end h-[1%] -translate-y-[%]
+    }
 
-/* #endregion */
-.section-proceso {
-    @apply w-[full] h-[1400px] bg-[var(--background)] overflow-hidden font-[MinionPro] relative
-}
+    .contenedor-abajo-horizontal-proceso {
+        @apply absolute inset-0 z-0 flex flex-col justify-end h-[55%]
+    }
 
-.contenedor-titulo-proceso {
-    @apply mt-10 mx-auto w-[50%] text-center
-}
+    /* #endregion */
 
-.titulo-proceso {
-    @apply text-[55px] text-[var(--text-green)]
-}
+    /* #region CONTENIDO */
+    .section-proceso {
+        @apply w-[full] h-[700px] bg-[var(--background)] overflow-visible font-[MinionPro] relative -mt-20
+    }
 
-.subtitulo-proceso {
-    @apply text-[45px] text-[var(--text-grey)] font-extrabold leading-tight
-}
+    .contenedor-titulo-proceso {
+        @apply mx-auto w-[100%] text-center relative
+    }
 
-.contenedor-imagenes-proceso {
-    @apply grid grid-cols-5 mt-[5%]
-}
+    .titulo-proceso {
+        @apply text-[40px] text-[var(--text-green)] mt-10
+    }
 
-.fondo-imagenes-proceso {
-    @apply bg-[var(--foreground)] h-[48%] w-full inset-0 z-0 absolute translate-y-[75%]
-}
+    .titulo-resaltado-proceso {
+        @apply text-[45px] text-[var(--text-green)] font-semibold
+    }
 
-.img1-proceso {
-    @apply z-20 relative col-span-2
-}
+    .subtitulo-proceso {
+        @apply text-[25px] text-[var(--text-grey)] font-extrabold leading-tight mt-5
+    }
 
-.img2-proceso {
-    @apply z-20 relative
-}
+    /* #endregion */
 
-.img3-proceso {
-    @apply z-20 relative
-}
+    /* #region IMAGENES */
+    .contenedor-imagenes-proceso {
+        @apply grid grid-cols-1 mt-[10%] bg-[var(--foreground)] overflow-hidden
+    }
 
-.img4-proceso {
-    @apply z-20 relative col-span-2
-}
-
-@media (min-width: 2000px) {
     .img1-proceso {
-        @apply z-20 relative translate-x-30 -translate-y-25
+        @apply z-20 relative mx-auto my-auto p-5 max-h-[90%] max-w-[90%]
+    }
+
+    /* #endregion */
+
+}
+
+@media (min-width: 501px) and (max-width: 1024px) {
+    /* #region GRAPH */
+
+    .graph-linea-horizontal-proceso {
+        @apply h-[2px] bg-[var(--graph-green)] w-full bottom-0 left-0
+    }
+
+
+    .contenedor-abajo-horizontal-proceso {
+        @apply absolute inset-0 z-0 flex flex-col justify-end h-[16%]
+    }
+
+    /* #endregion */
+
+    /* #region CONTENIDO */
+    .section-proceso {
+        @apply w-[full] h-[800px] bg-[var(--background)] overflow-hidden font-[MinionPro] relative
+    }
+
+    .contenedor-titulo-proceso {
+        @apply mx-auto w-[90%] text-center p-2
+    }
+
+    .titulo-proceso {
+        @apply text-[35px] text-[var(--text-green)] h-[120px]  content-center mb-5
+    }
+
+    .titulo-resaltado-proceso {
+        @apply text-[40px] text-[var(--text-green)] font-semibold
+    }
+
+    .subtitulo-proceso {
+        @apply text-[25px] text-[var(--text-grey)] font-extrabold leading-tight
+    }
+
+    /* #endregion */
+
+    /* #region IMAGENES */
+    .contenedor-imagenes-proceso {
+        @apply flex flex-row py-[5%] bg-[var(--foreground)] mt-10
+    }
+
+
+    .img1-proceso {
+        @apply z-20 relative mx-auto my-auto p-5 max-h-[100%] max-w-[90%]
     }
 
     .img2-proceso {
-        @apply z-20 relative translate-x-15 -translate-y-25
+        @apply z-20 relative mx-auto my-auto p-5 max-h-[90%] max-w-[90%]
     }
 
     .img3-proceso {
-        @apply z-20 relative translate-x-30 -translate-y-20
+        @apply z-20 relative mx-auto my-auto p-5 max-h-[90%] max-w-[90%]
     }
 
     .img4-proceso {
-        @apply z-20 relative col-span-2  translate-x-38 -translate-y-20
+        @apply z-20 relative mx-auto my-auto p-5 max-h-[90%] max-w-[90%]
     }
+
+    /* #endregion */
+}
+
+@media (min-width: 1025px) and (max-width: 1500px) {
+    /* #region GRAPH */
+
+    .contenedor-lineas-proceso {
+        @apply absolute inset-0 z-0 grid grid-cols-5 h-[40%] -translate-y-[15%]
+    }
+
+    .contenedor-lineas-abajo-proceso {
+        @apply absolute inset-0 z-0 grid grid-cols-5 h-[11%]
+    }
+
+    .separacion-linea-proceso {
+        @apply col-span-5 opacity-0
+    }
+
+    .graph-linea-proceso {
+        @apply h-[100%] bg-[var(--graph-green)] w-[2px] justify-self-auto
+    }
+
+    .graph-linea-proceso-2 {
+        @apply h-[40%] bg-[var(--graph-green)] w-[2px] justify-self-auto
+    }
+
+    .contenedor-lineas-horizontal-proceso {
+        @apply absolute inset-0 z-0 flex flex-col justify-end h-full
+    }
+
+    .contenedor-hor-proceso {
+        @apply grid grid-cols-5 h-[100%] items-end
+    }
+
+    .graph-linea-horizontal-proceso {
+        @apply h-[2px] bg-[var(--graph-green)] w-full bottom-0 left-0
+    }
+
+    .contenedor-extra-1 {
+        @apply absolute inset-0 z-0 flex flex-col justify-end h-[30%]
+    }
+
+    .contenedor-extra-2 {
+        @apply translate-y-[745%]
+    }
+
+    .transladar-y-proceso {
+        @apply translate-y-[68%]
+    }
+
+    .contenedor-lineas-img {
+        @apply absolute inset-0 z-0 grid grid-cols-5 h-full
+    }
+
+    .graph-linea-img {
+        @apply h-full bg-[var(--graph-white)] w-[2px]
+    }
+
+    .linea-oculta {
+        @apply opacity-0
+    }
+
+    .contenedor-abajo-horizontal-proceso {
+        @apply absolute inset-0 z-0 flex flex-col justify-end h-[103%]
+    }
+
+
+    /* #endregion */
+
+    /* #region CONTENIDO */
+    .section-proceso {
+        @apply w-[full] h-[1000px] bg-[var(--background)] overflow-visible font-[MinionPro] relative
+    }
+
+    .contenedor-titulo-proceso {
+        @apply -mt-10 mx-auto w-[60%] text-center p-5 translate-y-[10%]
+    }
+
+    .titulo-proceso {
+        @apply text-[35px] text-[var(--text-green)]
+    }
+
+    .titulo-resaltado-proceso {
+        @apply text-[40px] text-[var(--text-green)] font-semibold
+    }
+
+    .subtitulo-proceso {
+        @apply text-[25px] text-[var(--text-grey)] font-extrabold leading-tight
+    }
+
+    /* #endregion */
+
+    /* #region IMAGENES */
+    .contenedor-imagenes-proceso {
+        @apply grid grid-cols-5  mx-auto my-auto overflow-hidden translate-y-[50%] absolute
+    }
+
+    .fondo-imagenes-proceso {
+        @apply bg-[var(--foreground)] h-[50%] w-full inset-0 z-0 absolute translate-y-[65%]
+    }
+
+    .img1-proceso {
+        @apply z-20 relative col-span-2 mx-auto my-auto p-15 
+    }
+
+    .img2-proceso {
+        @apply z-20 relative mx-auto my-auto p-5 
+    }
+
+    .img3-proceso {
+        @apply hidden 
+    }
+
+    .img4-proceso {
+        @apply hidden
+    }
+
+    /* #endregion */
+
+}
+
+@media (min-width: 1501px) and (max-width: 2000px) {
+    /* #region GRAPH */
+
+    .contenedor-lineas-proceso {
+        @apply absolute inset-0 z-0 grid grid-cols-5 h-[30%] -translate-y-[30%]
+    }
+
+    .contenedor-lineas-abajo-proceso {
+        @apply absolute inset-0 z-0 grid grid-cols-5 h-[17%]
+    }
+
+    .separacion-linea-proceso {
+        @apply col-span-5 opacity-0
+    }
+
+    .graph-linea-proceso {
+        @apply h-[120%] bg-[var(--graph-green)] w-[2px] justify-self-auto
+    }
+
+    .graph-linea-proceso-2 {
+        @apply h-[80%] bg-[var(--graph-green)] w-[2px] justify-self-auto
+    }
+
+    .contenedor-lineas-horizontal-proceso {
+        @apply absolute inset-0 z-0 flex flex-col justify-end h-full
+    }
+
+    .contenedor-hor-proceso {
+        @apply grid grid-cols-5 h-[100%] items-end
+    }
+
+    .graph-linea-horizontal-proceso {
+        @apply h-[2px] bg-[var(--graph-green)] w-full bottom-0 left-0
+    }
+
+    .contenedor-extra-1 {
+        @apply absolute inset-0 z-0 flex flex-col justify-end h-[25%]
+    }
+
+    .contenedor-extra-2 {
+        @apply translate-y-[391%]
+    }
+
+    .contenedor-lineas-img {
+        @apply absolute inset-0 z-0 grid grid-cols-5 h-full
+    }
+
+    .graph-linea-img {
+        @apply h-full bg-[var(--graph-white)] w-[2px]
+    }
+
+    .linea-oculta {
+        @apply opacity-0
+    }
+
+    .contenedor-abajo-horizontal-proceso {
+        @apply absolute inset-0 z-0 flex flex-col justify-end h-[97%]
+    }
+
+    .transladar-y-proceso {
+        @apply translate-y-[75%]
+    }
+
+    /* #endregion */
+
+    /* #region CONTENIDO */
+    .section-proceso {
+        @apply w-[full] h-[1400px] bg-[var(--background)] overflow-visible font-[MinionPro] relative
+    }
+
+    .contenedor-titulo-proceso {
+        @apply mx-auto w-[50%] text-center -translate-y-[10%]
+    }
+
+    .titulo-proceso {
+        @apply text-[45px] text-[var(--text-green)]
+    }
+
+    .titulo-resaltado-proceso {
+        @apply text-[50px] text-[var(--text-green)] font-semibold
+    }
+
+    .subtitulo-proceso {
+        @apply text-[40px] text-[var(--text-grey)] font-extrabold leading-tight
+    }
+
+    /* #endregion */
+
+    /* #region IMAGENES */
+    .contenedor-imagenes-proceso {
+        @apply grid grid-cols-5 my-[5%]
+    }
+
+    .fondo-imagenes-proceso {
+        @apply bg-[var(--foreground)] h-[35%] w-full inset-0 z-0 absolute translate-y-[90%]
+    }
+
+    .img1-proceso {
+        @apply z-20 relative col-span-2
+    }
+
+    .img2-proceso {
+        @apply z-20 relative
+    }
+
+    .img3-proceso {
+        @apply z-20 relative
+    }
+
+    .img4-proceso {
+        @apply z-20 relative col-span-2
+    }
+
+    /* #endregion */
+
+}
+
+@media (min-width: 2001px) {
+    /* #region GRAPH */
+
+    .contenedor-lineas-proceso {
+        @apply absolute inset-0 z-0 grid grid-cols-5 h-[25%]
+    }
+
+    .contenedor-lineas-abajo-proceso {
+        @apply absolute inset-0 z-0 grid grid-cols-5 h-[17%]
+    }
+
+    .separacion-linea-proceso {
+        @apply col-span-5 opacity-0
+    }
+
+    .graph-linea-proceso {
+        @apply h-[70%] bg-[var(--graph-green)] w-[2px] justify-self-auto
+    }
+
+    .graph-linea-proceso-2 {
+        @apply h-[80%] bg-[var(--graph-green)] w-[2px] justify-self-auto
+    }
+
+    .contenedor-lineas-horizontal-proceso {
+        @apply absolute inset-0 z-0 flex flex-col justify-end h-full
+    }
+
+    .contenedor-hor-proceso {
+        @apply grid grid-cols-5 h-[100%] items-end
+    }
+
+    .graph-linea-horizontal-proceso {
+        @apply h-[2px] bg-[var(--graph-green)] w-full bottom-0 left-0
+    }
+
+    .contenedor-extra-1 {
+        @apply absolute inset-0 z-0 flex flex-col justify-end h-[25%]
+    }
+
+    .contenedor-extra-2 {
+        @apply translate-y-[476%]
+    }
+
+    .contenedor-lineas-img {
+        @apply absolute inset-0 z-0 grid grid-cols-5 h-full
+    }
+
+    .graph-linea-img {
+        @apply h-full bg-[var(--graph-white)] w-[2px]
+    }
+
+    .linea-oculta {
+        @apply opacity-0
+    }
+
+    .contenedor-abajo-horizontal-proceso {
+        @apply absolute inset-0 z-0 flex flex-col justify-end h-[103%]
+    }
+
+    .transladar-y-proceso {
+        @apply translate-y-[90%]
+    }
+
+    /* #endregion */
+
+    /* #region CONTENIDO */
+    .section-proceso {
+        @apply w-[full] h-[1400px] bg-[var(--background)] overflow-visible font-[MinionPro] relative
+    }
+
+    .contenedor-titulo-proceso {
+        @apply mx-auto w-[50%] text-center translate-y-[10%]
+    }
+
+    .titulo-proceso {
+        @apply text-[55px] text-[var(--text-green)]
+    }
+
+    .titulo-resaltado-proceso {
+        @apply text-[60px] text-[var(--text-green)] font-semibold
+    }
+
+    .subtitulo-proceso {
+        @apply text-[40px] text-[var(--text-grey)] font-extrabold leading-tight
+    }
+
+    /* #endregion */
+
+    /* #region IMAGENES */
+    .contenedor-imagenes-proceso {
+        @apply grid grid-cols-5 my-[8%]
+    }
+
+    .fondo-imagenes-proceso {
+        @apply bg-[var(--foreground)] h-[45%] w-full inset-0 z-0 absolute translate-y-[80%]
+    }
+
+    .img1-proceso {
+        @apply z-20 relative -translate-y-25 col-span-2 mx-auto
+    }
+
+    .img2-proceso {
+        @apply z-20 relative mx-auto -translate-y-25
+    }
+
+    .img3-proceso {
+        @apply z-20 relative mx-auto -translate-y-20
+    }
+
+    .img4-proceso {
+        @apply z-20 relative col-span-2 mx-auto -translate-y-20
+    }
+
+    /* #endregion */
+
+
 }

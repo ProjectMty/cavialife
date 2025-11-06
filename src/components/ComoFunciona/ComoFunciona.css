@@ -1,20 +1,25 @@
 @reference "tailwindcss";
 
+.separacion-funciona {
+    @apply hidden
+}
+
+
 /* #region Contenido */
 .section-funciona {
-    @apply w-[full] h-[500px] bg-[var(--background)] overflow-hidden font-[MinionPro] relative
+    @apply w-full h-[800px] bg-[var(--background)] overflow-hidden font-[MinionPro] relative
 }
 
 .contenedor-inf-funciona {
-    @apply grid-cols-5 grid
+    @apply grid-cols-1 grid relative h-[90%]
 }
 
 .img-funciona {
-    @apply my-20 px-2 
+    @apply my-5 px-2 mx-auto
 }
 
 .contenedor-texo-funciona {
-    @apply flex flex-col col-span-2 p-10 py-[15%]
+    @apply flex flex-col p-5 py-[0%] text-center
 }
 
 .titulo-texto-funciona {
@@ -22,8 +27,9 @@
 }
 
 .texto-funciona {
-    @apply text-[22px] text-[var(--text-grey)] mt-5
+    @apply text-[22px] text-[var(--text-grey)] mt-0
 }
+
 /* #endregion */
 /* #region GRAPH */
 
@@ -32,24 +38,279 @@
 }
 
 .graph-linea-funciona {
-    @apply h-full bg-[var(--graph-green)] w-[2px] justify-self-auto
+    @apply h-[40%] bg-[var(--graph-green)] w-[2px] justify-self-auto
+}
+
+.graph-linea-funciona-oculta {
+    @apply h-[40%] bg-[var(--graph-green)] w-[2px] justify-self-auto opacity-100
 }
 
 .contenedor-lineas-horizontal-funciona {
-    @apply  absolute inset-0 z-0  flex flex-col justify-end h-full
+    @apply absolute inset-0 z-0 flex flex-col justify-end h-[100%]
 }
-.contenedor-hor-funciona{
-    @apply grid grid-cols-5 h-[100%] items-end
+
+.contenedor-hor-funciona {
+    @apply grid grid-cols-5 h-[100%] items-center -translate-y-[10%]
 }
+
 .graph-linea-horizontal-funciona {
     @apply h-[2px] bg-[var(--graph-green)] w-full bottom-0 left-0
 }
 
+.contenedor-lineas-horizontal-funciona-oculta {
+    @apply absolute inset-0 z-0 flex flex-col justify-end h-[100%]
+}
+
+.contenedor-hor-funciona-oculta {
+    @apply grid grid-cols-5 h-[100%] items-center translate-y-[40%]
+}
+
+.graph-linea-horizontal-funciona-oculta {
+    @apply h-[2px] bg-[var(--graph-green)] w-full bottom-0 left-0 opacity-100
+}
+
+
+
 /* #endregion */
 
-@media (min-width: 2000px){
-   .img-funciona {
-    @apply my-26 scale-125 mx-16
+@media (min-width: 500px) {
+
+    /* #region Contenido */
+    .section-funciona {
+        @apply w-full h-[500px] bg-[var(--background)] overflow-hidden font-[MinionPro] relative
+    }
+
+    .contenedor-inf-funciona {
+        @apply grid-cols-5 grid relative h-full
+    }
+
+    .img-funciona {
+        @apply my-auto px-2 scale-100 col-span-2
+    }
+
+    .contenedor-texo-funciona {
+        @apply flex flex-col p-10 py-[0%] text-start col-span-3 w-[100%] my-auto
+    }
+
+    .titulo-texto-funciona {
+        @apply text-[35px] text-[var(--text-green)] -mt-15
+    }
+
+    .texto-funciona {
+        @apply text-[20px] text-[var(--text-grey)] mt-2
+    }
+
+    .separacion-funciona {
+        @apply hidden
+    }
+
+    /* #endregion */
+    /* #region GRAPH */
+
+    .contenedor-lineas-funciona {
+        @apply absolute inset-0 z-0 grid grid-cols-5
+    }
+
+    .graph-linea-funciona {
+        @apply h-[80%] bg-[var(--graph-green)] w-[2px] justify-self-auto
+    }
+
+    .linea-oculta {
+        @apply opacity-0
+    }
+.linea-oculta-horizontal {
+        @apply opacity-100
+    }
+    .linea-oculta-md {
+        @apply opacity-0
+    }
+
+    .contenedor-lineas-horizontal-funciona {
+        @apply absolute inset-0 z-0 flex flex-col justify-end h-[100%]
+    }
+
+    .contenedor-hor-funciona {
+        @apply grid grid-cols-5 h-[100%] items-center translate-y-[30%]
+    }
+
+    .graph-linea-horizontal-funciona {
+        @apply h-[2px] bg-[var(--graph-green)] w-full bottom-0 left-0
+    }
+
+    .contenedor-lineas-horizontal-funciona-oculta {
+        @apply hidden
+    }
+
+    /* #endregion */
+
 }
+
+@media (min-width: 1024px) {
+    /* #region Contenido */
+
+    .img-funciona {
+        @apply my-[10%] px-10 scale-125 col-span-2 mx-auto
+    }
+
+    .contenedor-texo-funciona {
+        @apply flex flex-col p-10 py-[12%] text-start col-span-3 my-auto
+    }
+
+    .titulo-texto-funciona {
+        @apply text-[55px] text-[var(--text-green)] -mt-[15%]
+    }
+
+    .texto-funciona {
+        @apply text-[22px] text-[var(--text-grey)] mt-2
+    }
+
+    .separacion-funciona {
+        @apply hidden
+    }
+
+    /* #endregion */
+       /* #region GRAPH */
+
+    .contenedor-lineas-funciona {
+        @apply absolute inset-0 z-0 grid grid-cols-5
+    }
+
+    .graph-linea-funciona {
+        @apply h-[80%] bg-[var(--graph-green)] w-[2px] justify-self-auto
+    }
+
+    .linea-oculta {
+        @apply opacity-0
+    }
+
+    .linea-oculta-horizontal {
+        @apply opacity-100
+    }
+    .linea-oculta-md {
+        @apply opacity-0
+    }
+
+    .contenedor-lineas-horizontal-funciona {
+        @apply absolute inset-0 z-0 flex flex-col justify-end h-[100%]
+    }
+
+    .contenedor-hor-funciona {
+        @apply grid grid-cols-5 h-[100%] items-center translate-y-[30%]
+    }
+
+    .graph-linea-horizontal-funciona {
+        @apply h-[2px] bg-[var(--graph-green)] w-full bottom-0 left-0
+    }
+
+    .contenedor-lineas-horizontal-funciona-oculta {
+        @apply hidden
+    }
+
+    /* #endregion */
+
+}
+
+@media (min-width: 1500px) {
+
+    /* #region Contenido */
+    .section-funciona {
+        @apply w-[full] h-[500px] bg-[var(--background)] overflow-hidden font-[MinionPro] relative
+    }
+
+    .contenedor-inf-funciona {
+        @apply grid-cols-5 grid
+    }
+
+    .separacion-funciona {
+        @apply block
+    }
+
+    .img-funciona {
+        @apply my-20 px-2 scale-100 col-span-1 mx-[0%]
+    }
+
+    .contenedor-texo-funciona {
+        @apply flex flex-col col-span-2 p-10 py-[15%]
+    }
+
+    .titulo-texto-funciona {
+        @apply text-[50px] text-[var(--text-green)] -mt-[10%]
+    }
+
+    .texto-funciona {
+        @apply text-[22px] text-[var(--text-grey)] mt-5
+    }
+
+    /* #endregion */
+      .linea-oculta-md {
+        @apply opacity-100
+    }
+   .linea-oculta-horizontal {
+        @apply opacity-0
+    }
+}
+
+@media (min-width: 2000px) {
+      /* #region Contenido */
+    .section-funciona {
+        @apply w-[full] h-[500px] bg-[var(--background)] overflow-hidden font-[MinionPro] relative
+    }
+
+    .contenedor-inf-funciona {
+        @apply grid-cols-5 grid
+    }
+
+    .separacion-funciona {
+        @apply block
+    }
+
+    .img-funciona {
+        @apply my-[20%] px-[8%] scale-125 col-span-1 mx-auto
+    }
+
+    .contenedor-texo-funciona {
+        @apply flex flex-col col-span-2 p-10 py-[15%]
+    }
+
+    .titulo-texto-funciona {
+        @apply text-[50px] text-[var(--text-green)] -mt-[10%]
+    }
+
+    .texto-funciona {
+        @apply text-[22px] text-[var(--text-grey)] mt-5
+    }
+
+    /* #endregion */
+      /* #region GRAPH */
+
+    .contenedor-lineas-funciona {
+        @apply absolute inset-0 z-0 grid grid-cols-5
+    }
+
+    .graph-linea-funciona {
+        @apply h-[100%] bg-[var(--graph-green)] w-[2px] justify-self-auto
+    }
+
+    .linea-oculta-md {
+        @apply opacity-100
+    }
+
+    .contenedor-lineas-horizontal-funciona {
+        @apply absolute inset-0 z-0 flex flex-col justify-end h-[100%]
+    }
+
+    .contenedor-hor-funciona {
+        @apply grid grid-cols-5 h-[100%] items-center translate-y-[50%]
+    }
+
+    .graph-linea-horizontal-funciona {
+        @apply h-[2px] bg-[var(--graph-green)] w-full bottom-0 left-0
+    }
+
+    .contenedor-lineas-horizontal-funciona-oculta {
+        @apply hidden
+    }
+
+    /* #endregion */
 
 }
