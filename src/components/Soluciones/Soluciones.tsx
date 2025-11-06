@@ -70,7 +70,7 @@ export default function Soluciones() {
                     lines={[
 
                 <div key={1} className="cuandro-inf-soluciones">
-                    <p className="titulo-inf-soluciones">The Satin Midi Skirt</p>
+                    <p className="titulo-inf-soluciones">White Glove Delivery</p>
                     <p>Cavia unlike cualquier otro servicio.
                         Disfruta la verdadera unboxin experience:
                         Abrir una caja de CAVIA es una experiencia premium en cada detalle.
