@@ -5,6 +5,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Cavia",
   description: "Web Cavia",
+    icons: {
+    icon: 'app/favicon.svg',
+  }
 };
 
 export default function RootLayout({

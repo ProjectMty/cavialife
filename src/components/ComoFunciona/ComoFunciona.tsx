@@ -1,5 +1,8 @@
+"use client";
 import Image from "next/image";
 import "@/components/ComoFunciona/ComoFunciona.css"
+import ZoomAnimate from "@/animate/ZoomAnimate";
+import ShowAnimate from "@/animate/ShowAnimate";
 
 export default function ComoFunciona() {
     return (
@@ -35,30 +38,40 @@ export default function ComoFunciona() {
 
             <div className="contenedor-inf-funciona">
                 <div className="separacion-funciona"></div>
-                <Image
-                    src="/ComoFunciona/div2.png"
-                    alt="Logo"
-                    width={399}
-                    height={311}
-                    className="img-funciona"
-                />
+                <ZoomAnimate scale={1.1}>
+                    <Image
+                        src="/ComoFunciona/div2.png"
+                        alt="Logo"
+                        width={399}
+                        height={311}
+                        className="img-funciona"
+                    />
+                </ZoomAnimate>
+
 
                 <div className="contenedor-texo-funciona">
-                    <p className="titulo-texto-funciona">¿Cómo funciona <span className="font-semibold">Cavia</span>?</p>
-                    <p className="texto-funciona"> <span className="font-semibold">Cavia </span>
-                        impulsa tus <span className="font-semibold">compras más alla de las tiendas retail de tu ciudad. Accede </span>
-                        a <span className="font-semibold">boutiques exclusivas </span>
-                        y <span className="font-semibold">show rooms</span> posh en
-                        <span className="font-semibold"> Estados unidos</span> y
-                        <span className="font-semibold"> Europa. </span>
-                        <br />
+                    <ShowAnimate
+                        delay={0.2}
+                        lines={[
+                            <p  key={1} className="titulo-texto-funciona">¿Cómo funciona <span className="font-semibold">Cavia</span>?</p>,
+                            <p key={2} className="texto-funciona"> <span className="font-semibold">Cavia </span>
+                                impulsa tus <span className="font-semibold">compras más alla de las tiendas retail de tu ciudad. Accede </span>
+                                a <span className="font-semibold">boutiques exclusivas </span>
+                                y <span className="font-semibold">show rooms</span> posh en
+                                <span className="font-semibold"> Estados unidos</span> y
+                                <span className="font-semibold"> Europa. </span>
+                                <br />
+                            </p>,
+                            <p key={3} className="texto-funciona">
+                                <span className="font-semibold">Tú compras, Cavia </span>
+                                se encarga del resto
+                            </p>
+                        ]}>
+
+                    </ShowAnimate>
 
 
-                    </p>
-                    <p className="texto-funciona">
-                        <span className="font-semibold">Tú compras, Cavia </span>
-                        se encarga del resto
-                    </p>
+
                 </div>
 
             </div>

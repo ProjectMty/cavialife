@@ -1,92 +1,420 @@
 @reference "tailwindcss";
 
 @media (min-width: 0px) and (max-width: 500px) {
+        /* #region CONTENIDO */
+    .section-soluciones {
+        @apply w-[full] h-[1400px] bg-[var(--background)] overflow-hidden font-[MinionPro] relative
+    }
+
+    .contenedor-titulo-soluciones {
+        @apply mx-auto w-[70%] text-center mt-10 mb-5
+    }
+
+    .titulo-soluciones {
+        @apply text-[40px] text-[var(--text-green)]
+    }
+
+    .contenedor-inf-soluciones {
+        @apply grid grid-cols-1 gap-5 bg-[var(--foreground)] py-10
+    }
+
+    .cuandro-inf-soluciones {
+        @apply p-5 m-2 mx-6 text-center shadow-md bg-[var(--background)];
+    }
+
+    .titulo-inf-soluciones {
+        @apply text-[30px] text-[var(--text-green)] text-center font-medium
+    }
+
+    .contenedor-boton-soluciones {
+        @apply mx-auto w-[100%] text-center m-10 relative
+    }
+
+    .boton-cotiza-soluciones {
+        @apply w-[55%] bg-[#99b1af] h-[60px] rounded-[50px] text-white text-[25px] z-40 relative 
+        hover:bg-[var(--text-green)] transition duration-300 shadow-md;
+    }
+
+    .fondo-imagenes-soluciones {
+        @apply hidden
+    }
+
+    .img-soluciones {
+        @apply z-20 relative scale-200
+    }
+
+    /* #endregion */
+    /* #region GRAPH */
+
+    .contenedor-lineas-soluciones {
+        @apply hidden
+    }
+
+    .graph-linea-soluciones {
+        @apply hidden
+    }
+
+    .graph-linea-mitad-soluciones {
+        @apply hidden
+    }
+
+    .contenedor-lineas-horizontal-soluciones {
+        @apply hidden
+    }
+
+    .contenedor-hor-soluciones {
+        @apply hidden
+    }
+
+    .graph-linea-horizontal-soluciones {
+        @apply hidden
+    }
+
+    .contenedor-lineas-abajo-soluciones {
+        @apply hidden
+    }
+
+    .contenedor-lineas-abajo2-soluciones {
+        @apply hidden
+    }
+
+    /* #endregion */
 
 }
+
+@media (min-width: 501px) and (max-width: 1024px) {
+        /* #region CONTENIDO */
+    .section-soluciones {
+        @apply w-[full] h-[1300px] bg-[var(--background)] overflow-hidden font-[MinionPro] relative
+    }
+
+    .contenedor-titulo-soluciones {
+        @apply mx-auto w-[50%] text-center py-[5%]
+    }
+
+    .titulo-soluciones {
+        @apply text-[35px] text-[var(--text-green)] h-[80px] 
+    }
+
+    .contenedor-inf-soluciones {
+        @apply grid grid-cols-1 gap-10
+    }
+
+    .cuandro-inf-soluciones {
+        @apply p-5 m-2 mx-[5%] text-center shadow-lg;
+    }
+
+    .titulo-inf-soluciones {
+        @apply text-[30px] text-[var(--text-green)] text-center font-medium
+    }
+
+    .contenedor-boton-soluciones {
+        @apply mx-auto w-[50%] text-center m-10 relative
+    }
+
+    .boton-cotiza-soluciones {
+        @apply w-[95%] bg-[#99b1af] h-[60px] rounded-[50px] text-white text-[25px] z-40 relative 
+        hover:bg-[var(--text-green)] transition duration-300 shadow-lg;
+    }
+
+    .fondo-imagenes-soluciones {
+        @apply hidden
+    }
+
+    .img-soluciones {
+        @apply z-20 relative scale-150 translate-y-[25%]
+    }
+
+    /* #endregion */
+    /* #region GRAPH */
+
+    .contenedor-lineas-soluciones {
+        @apply absolute inset-0 z-0 grid grid-cols-5 -translate-y-[10%]
+    }
+
+    .contenedor-hor-soluciones {
+        @apply grid grid-cols-5 h-[100%] items-end 
+    }
+
+    .graph-linea-horizontal-soluciones {
+        @apply h-[12px] bg-[var(--graph-green)] w-full bottom-0 left-0 
+    }
+
+    .contenedor-abajo-horizontal-soluciones{
+        @apply absolute inset-0 z-0  flex flex-col justify-end h-[12%]
+    }
+
+    .abajo-horizontal-soluciones{
+        @apply grid grid-cols-5 h-[1%]
+    }
+
+
+    /* #endregion */
+
+}
+
+@media (min-width: 1025px) and (max-width: 1500px) {
+    
+    /* #region CONTENIDO */
+    .section-soluciones {
+        @apply w-[full] h-[1200px] bg-[var(--background)] overflow-hidden font-[MinionPro] relative 
+    }
+
+    .contenedor-titulo-soluciones {
+        @apply mx-auto w-[50%] text-center mb-15 
+    }
+
+    .titulo-soluciones {
+        @apply text-[50px] text-[var(--text-green)] h-[70px]
+    }
+
+    .contenedor-inf-soluciones {
+        @apply grid grid-cols-1 gap-2
+    }
+
+    .cuandro-inf-soluciones {
+        @apply p-5 m-2 mx-[25%] text-center shadow-md h-[200px];
+    }
+
+    .titulo-inf-soluciones {
+        @apply text-[30px] text-[var(--text-green)] text-center font-medium mb-5
+    }
+
+    .contenedor-boton-soluciones {
+        @apply mx-auto w-[50%] text-center m-10 relative
+    }
+
+    .boton-cotiza-soluciones {
+        @apply w-[35%] bg-[#99b1af] h-[60px] rounded-[50px] text-white text-[25px] z-40 relative 
+        hover:bg-[var(--text-green)] transition duration-300 shadow-md;
+    }
+
+    .fondo-imagenes-soluciones {
+        @apply bg-[var(--foreground)] h-[15%] w-full inset-0 z-0 absolute translate-y-[570%]
+    }
+
+    .img-soluciones {
+        @apply z-20 relative scale-75 -translate-y-[16%] mx-auto
+    }
+
+    /* #endregion */
+    /* #region GRAPH */
+
+    .contenedor-lineas-soluciones {
+        @apply absolute inset-0 z-0 grid grid-cols-5 -translate-y-[10%]
+    }
+
+    .graph-linea-soluciones {
+        @apply h-[80%] bg-[var(--graph-green)] w-[2px] justify-self-auto
+    }
+
+    .contenedor-lineas-horizontal-soluciones {
+        @apply absolute inset-0 z-0 flex flex-col justify-end h-[73%]
+    }
+
+    .contenedor-hor-soluciones {
+        @apply grid grid-cols-5 h-[100%] items-end
+    }
+
+    .graph-linea-horizontal-soluciones {
+        @apply h-[2px] bg-[var(--graph-green)] w-full bottom-0 left-0
+    }
+
+    .contenedor-lineas-abajo-soluciones {
+        @apply absolute inset-0 z-0 grid grid-cols-5 h-[60%] translate-y-[90%] 
+    }
+
+    .contenedor-lineas-abajo2-soluciones {
+        @apply absolute inset-0 z-0 grid grid-cols-5 h-[20%] translate-y-[471%]
+    }
+
+    .contenedor-abajo-horizontal-soluciones{
+        @apply absolute inset-0 z-0  flex flex-col justify-end h-[95%]
+    }
+
+    .abajo-horizontal-soluciones{
+        @apply grid grid-cols-5 h-[1%]
+    }
+    /* #endregion */
+
+}
+
 @media (min-width: 1501px) and (max-width: 2000px) {
 
-.section-soluciones {
-    @apply w-[full] h-[900px] bg-[var(--background)] overflow-visible font-[MinionPro] relative
+    /* #region CONTENIDO */
+    .section-soluciones {
+        @apply w-[full] h-[900px] bg-[var(--background)] overflow-visible font-[MinionPro] relative -translate-y-[10%]
+    }
+
+    .contenedor-titulo-soluciones {
+        @apply mx-auto w-[50%] text-center mb-10 
+    }
+
+    .titulo-soluciones {
+        @apply text-[50px] text-[var(--text-green)]
+    }
+
+    .contenedor-inf-soluciones {
+        @apply grid grid-cols-5 
+    }
+
+    .cuandro-inf-soluciones {
+        @apply relative p-[8%] m-2 mx-6 text-center shadow-md h-[320px];
+    }
+
+    .titulo-inf-soluciones {
+        @apply text-[30px] text-[var(--text-green)] text-center font-medium mb-[5%]
+    }
+
+    .contenedor-boton-soluciones {
+        @apply mx-auto w-[50%] text-center m-10 relative
+    }
+
+    .boton-cotiza-soluciones {
+        @apply w-[35%] bg-[#99b1af] h-[60px] rounded-[50px] text-white text-[25px] z-40 relative 
+        hover:bg-[var(--text-green)] transition duration-300 shadow-md;
+    }
+
+    .fondo-imagenes-soluciones {
+        @apply bg-[var(--foreground)] h-[28%] w-full inset-0 z-0 absolute translate-y-[270%]
+    }
+
+    .img-soluciones {
+        @apply z-20 relative col-span-3 scale-115 mx-auto py-6
+    }
+
+    /* #endregion */
+    /* #region GRAPH */
+
+    .contenedor-lineas-soluciones {
+        @apply absolute inset-0 z-0 grid grid-cols-5 -translate-y-[11%]
+    }
+
+    .graph-linea-soluciones {
+        @apply h-[80%] bg-[var(--graph-green)] w-[2px] justify-self-auto
+    }
+
+    .graph-linea-mitad-soluciones {
+        @apply h-[35%] bg-[var(--graph-green)] w-[2px] justify-self-auto translate-y-[70%]
+    }
+
+    .contenedor-lineas-horizontal-soluciones {
+        @apply absolute inset-0 z-0 flex flex-col justify-end h-[58%]
+    }
+
+    .contenedor-hor-soluciones {
+        @apply grid grid-cols-5 h-[100%] items-end
+    }
+
+    .graph-linea-horizontal-soluciones {
+        @apply h-[2px] bg-[var(--graph-green)] w-full bottom-0 left-0
+    }
+
+    .contenedor-lineas-abajo-soluciones {
+        @apply absolute inset-0 z-0 grid grid-cols-5 h-[40%] translate-y-[220%] 
+    }
+
+    .contenedor-lineas-abajo2-soluciones {
+        @apply absolute inset-0 z-0 grid grid-cols-5 h-[18%] translate-y-[660%]
+    }
+
+    .contenedor-abajo-horizontal-soluciones{
+        @apply absolute inset-0 z-0  flex flex-col justify-end h-[120%]
+    }
+
+    .abajo-horizontal-soluciones{
+        @apply grid grid-cols-5 h-[1%]
+    }
+    /* #endregion */
 
 }
 
-.contenedor-titulo-soluciones{
-    @apply mx-auto w-[50%] text-center mb-10
-}
-.titulo-soluciones{
-    @apply text-[50px] text-[var(--text-green)]  
-}
+@media (min-width: 2001px) {
 
-.contenedor-inf-soluciones{
-    @apply grid grid-cols-5
-}
+    /* #region CONTENIDO */
+    .section-soluciones {
+        @apply w-[full] h-[900px] bg-[var(--background)] overflow-visible font-[MinionPro] relative 
+    }
 
-.cuandro-inf-soluciones{
-    @apply shadow-[2px_2px_10px_rgba(0,0,0,0.3)] p-5 m-2 mx-6 text-center
-}
+    .contenedor-titulo-soluciones {
+        @apply mx-auto w-[50%] text-center mb-10 
+    }
 
-.titulo-inf-soluciones{
-    @apply text-[30px] text-[var(--text-green)] text-center font-medium
-}
+    .titulo-soluciones {
+        @apply text-[50px] text-[var(--text-green)]
+    }
 
-.contenedor-boton-soluciones{
-    @apply  mx-auto w-[50%] text-center m-10  relative
-}
+    .contenedor-inf-soluciones {
+        @apply grid grid-cols-5
+    }
 
-.boton-cotiza-soluciones{
-    @apply w-[35%] bg-[#99b1af] h-[60px] rounded-[50px]
-    shadow-[2px_5px_5px_rgba(0,0,0,0.5)]
-    text-white text-[25px] z-40 relative
-    hover:bg-[var(--text-green)] transition duration-300
-}
+    .cuandro-inf-soluciones {
+        @apply p-5 m-2 mx-6 text-center shadow-md h-[220px];
+    }
 
-.fondo-imagenes-soluciones{
-    @apply bg-[var(--foreground)] h-[28%] w-full inset-0 z-0 absolute
-    translate-y-[230%]
-}
+    .titulo-inf-soluciones {
+        @apply text-[30px] text-[var(--text-green)] text-center font-medium
+    }
 
-.img-soluciones{
-    @apply z-20 relative col-span-3 scale-105
-}
-/* #region GRAPH */
-}
+    .contenedor-boton-soluciones {
+        @apply mx-auto w-[50%] text-center m-13 relative
+    }
 
-.contenedor-lineas-soluciones {
-    @apply absolute inset-0 z-0 grid grid-cols-5 -translate-y-[10%] 
-}
+    .boton-cotiza-soluciones {
+        @apply w-[35%] bg-[#99b1af] h-[60px] rounded-[50px] text-white text-[25px] z-40 relative 
+        hover:bg-[var(--text-green)] transition duration-300 shadow-md;
+    }
 
-.graph-linea-soluciones {
-    @apply h-[80%] bg-[var(--graph-green)] w-[2px] justify-self-auto
-}
+    .fondo-imagenes-soluciones {
+        @apply bg-[var(--foreground)] h-[28%] w-full inset-0 z-0 absolute translate-y-[280%]
+    }
 
-.graph-linea-mitad-soluciones {
-    @apply h-[25%] bg-[var(--graph-green)] w-[2px] justify-self-auto 
-    translate-y-[95%]
-}
+    .img-soluciones {
+        @apply z-20 relative col-span-3 scale-125 translate-y-[15%] mx-auto
+    }
 
-.contenedor-lineas-horizontal-soluciones {
-    @apply  absolute inset-0 z-0  flex flex-col justify-end  h-[48%]
-}
-.contenedor-hor-soluciones{
-    @apply grid grid-cols-5 h-[100%] items-end
-}
-.graph-linea-horizontal-soluciones {
-    @apply h-[2px] bg-[var(--graph-green)] w-full bottom-0 left-0
-}
+    /* #endregion */
+    /* #region GRAPH */
 
-.contenedor-lineas-abajo-soluciones {
-    @apply absolute inset-0 z-0 grid grid-cols-5 h-[60%] translate-y-[109%]
-}
+    .contenedor-lineas-soluciones {
+        @apply absolute inset-0 z-0 grid grid-cols-5 -translate-y-[12%]
+    }
 
-.contenedor-lineas-abajo2-soluciones {
-    @apply absolute inset-0 z-0 grid grid-cols-5 h-[28%] translate-y-[389%]
-}
+    .graph-linea-soluciones {
+        @apply h-[80%] bg-[var(--graph-green)] w-[2px] justify-self-auto
+    }
 
-/* #endregion */
+    .graph-linea-mitad-soluciones {
+        @apply h-[25%] bg-[var(--graph-green)] w-[2px] justify-self-auto translate-y-[100%]
+    }
 
+    .contenedor-lineas-horizontal-soluciones {
+        @apply absolute inset-0 z-0 flex flex-col justify-end h-[48%]
+    }
 
-@media (min-width: 2000px) {
-.img-soluciones{
-    @apply z-20 relative col-span-3 scale-125 translate-y-6 translate-x-32
-}
+    .contenedor-hor-soluciones {
+        @apply grid grid-cols-5 h-[100%] items-end 
+    }
+
+    .graph-linea-horizontal-soluciones {
+        @apply h-[2px] bg-[var(--graph-green)] w-full bottom-0 left-0
+    }
+
+    .contenedor-lineas-abajo-soluciones {
+        @apply absolute inset-0 z-0 grid grid-cols-5 h-[60%] translate-y-[130%]
+    }
+
+    .contenedor-lineas-abajo2-soluciones {
+        @apply absolute inset-0 z-0 grid grid-cols-5 h-[20%] translate-y-[620%]
+    }
+
+    .contenedor-abajo-horizontal-soluciones{
+        @apply absolute inset-0 z-0  flex flex-col justify-end h-[125%]
+    }
+
+    .abajo-horizontal-soluciones{
+        @apply grid grid-cols-5 h-[1%]
+    }
+    /* #endregion */
+
 }

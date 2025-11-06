@@ -1,5 +1,8 @@
+"use client";
 import Image from "next/image";
 import "@/components/Proceso/Proceso.css"
+import ZoomAnimate from "@/animate/ZoomAnimate";
+import ShowAnimate from "@/animate/ShowAnimate";
 
 export default function Proceso() {
     return (
@@ -41,9 +44,16 @@ export default function Proceso() {
 
 
             <div className="contenedor-titulo-proceso">
-                <p className="titulo-proceso">Tú compras, <span className="titulo-resaltado-proceso">Cavia</span> se encarga del resto </p>
-                <p className="subtitulo-proceso">Recibe en México con un servicio hecho a tu medida</p>
-                <p className="subtitulo-proceso">Your prestige, your essence. delivered to your doorstep in Mexico from anywhere in the world</p>
+                <ShowAnimate
+                    delay={0.2}
+                    lines={[
+                        <p key={1} className="titulo-proceso">Tú compras, <span className="titulo-resaltado-proceso">Cavia</span> se encarga del resto </p>,
+                        <p key={2} className="subtitulo-proceso">Recibe en México con un servicio hecho a tu medida</p>,
+                        <p key={3} className="subtitulo-proceso">Your prestige, your essence. delivered to your doorstep in Mexico from anywhere in the world</p>,
+
+                    ]}>
+
+                </ShowAnimate>
             </div>
 
             <div className="fondo-imagenes-proceso">
@@ -75,41 +85,53 @@ export default function Proceso() {
 
             </div>
 
-            {/* carrusel mobil **** */}
+
             <div className="contenedor-imagenes-proceso">
 
                 <div></div>
+                <div className="col-span-2">
+                    <ZoomAnimate scale={1.03}>
+                        <Image
+                            src="/Proceso/div3-1.png"
+                            alt="Logo"
+                            width={800}
+                            height={615}
+                            className="img1-proceso "
+                        />
+                    </ZoomAnimate>
+                </div>
+                <ZoomAnimate scale={1.03}>
+                    <Image
+                        src="/Proceso/div3-2.png"
+                        alt="Logo"
+                        width={399}
+                        height={611}
+                        className="img2-proceso"
+                    />
+                </ZoomAnimate>
+                <div></div>
+                <div></div>
+                <ZoomAnimate scale={1.03}>
+                    <Image
+                        src="/Proceso/div3-3.png"
+                        alt="Logo"
+                        width={399}
+                        height={310}
+                        className="img3-proceso"
+                    />
+                </ZoomAnimate>
+                <div className="col-span-2">
+                    <ZoomAnimate scale={1.03}>
+                        <Image
+                            src="/Proceso/div3-4.png"
+                            alt="Logo"
+                            width={814}
+                            height={310}
+                            className="img4-proceso "
+                        />
+                    </ZoomAnimate>
+                </div>
 
-                <Image
-                    src="/Proceso/div3-1.png"
-                    alt="Logo"
-                    width={800}
-                    height={615}
-                    className="img1-proceso "
-                />
-                <Image
-                    src="/Proceso/div3-2.png"
-                    alt="Logo"
-                    width={399}
-                    height={611}
-                    className="img2-proceso"
-                />
-                <div></div>
-                <div></div>
-                <Image
-                    src="/Proceso/div3-3.png"
-                    alt="Logo"
-                    width={399}
-                    height={310}
-                    className="img3-proceso"
-                />
-                <Image
-                    src="/Proceso/div3-4.png"
-                    alt="Logo"
-                    width={814}
-                    height={310}
-                    className="img4-proceso "
-                />
             </div>
         </section>
     )
