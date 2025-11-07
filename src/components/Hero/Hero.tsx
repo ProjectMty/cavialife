@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Hero() {
     return (
-        <section className="section-hero">
+        <section id="hero" className="section-hero">
 
             <div className="contenedor-lineas-hero">
                 <div className="graph-linea-hero"/>

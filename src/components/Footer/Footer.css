@@ -1,0 +1,72 @@
+ @reference "tailwindcss";
+
+@media (min-width: 0px) and (max-width: 1024px){
+     /* #region Contenido */
+     .section-Footer {
+         @apply w-full h-[300px] bg-[var(--background)] overflow-hidden font-[MinionPro] relative
+     }
+
+     .contenedor-Footer {
+         @apply grid grid-cols-2 w-[100%] mx-auto
+     }
+
+     .logo-Footer{
+        @apply w-[10%] mx-auto mt-20
+     }
+     /* #endregion */
+
+        /* #region TEXTO */
+     .contenedor-vinculos-Footer{
+        @apply relative flex-col flex gap-1 h-[30px] w-[100%] mx-auto
+        mt-10  items-center justify-center
+     }
+
+     .linea-grafica-Footer{
+        @apply h-[80%] w-[2px] bg-[var(--text-grey)] mx-2
+     }
+
+     .vinculo-Footer{
+        @apply text-[25px]
+     }
+
+     .rights-Footer{
+        @apply text-[20px] font-extralight text-[#5c5c5c]
+     }
+     /* #endregion */
+ 
+}
+@media (min-width: 1025px){
+         /* #region Contenido */
+     .section-Footer {
+         @apply w-full h-[300px] bg-[var(--background)] overflow-hidden font-[MinionPro] relative
+     }
+
+     .contenedor-Footer {
+         @apply grid grid-cols-4 w-[55%] mx-auto
+     }
+
+     .logo-Footer{
+        @apply w-[10%] mx-auto mt-20
+     }
+     /* #endregion */
+
+        /* #region TEXTO */
+     .contenedor-vinculos-Footer{
+        @apply relative flex-row flex gap-4 h-[30px] w-[50%] mx-auto
+        mt-10  items-center justify-center
+     }
+
+     .linea-grafica-Footer{
+        @apply h-[80%] w-[2px] bg-[var(--text-grey)] mx-2
+     }
+
+     .vinculo-Footer{
+        @apply text-[25px]
+     }
+
+     .rights-Footer{
+        @apply text-[20px] font-extralight text-[#5c5c5c]
+     }
+     /* #endregion */
+ 
+}
