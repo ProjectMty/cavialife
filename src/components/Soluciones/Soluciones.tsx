@@ -10,8 +10,9 @@ export default function Soluciones() {
         const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
         window.open(url, "_blank");
     };
+
     return (
-        <section className="section-soluciones">
+        <section id="Soluciones" className="section-soluciones">
 
             <div className="contenedor-lineas-soluciones">
                 <div className="graph-linea-soluciones opacity-0" />
@@ -66,18 +67,18 @@ export default function Soluciones() {
                             </p>
                         </div>
                     ]} />
-                        <ShowAnimate delay={0.6}
+                <ShowAnimate delay={0.6}
                     lines={[
 
-                <div key={1} className="cuandro-inf-soluciones">
-                    <p className="titulo-inf-soluciones">White Glove Delivery</p>
-                    <p>Cavia unlike cualquier otro servicio.
-                        Disfruta la verdadera unboxin experience:
-                        Abrir una caja de CAVIA es una experiencia premium en cada detalle.
-                        La envoltura, los aromas y la presentación... simplemente inigualables.
-                    </p>
-                </div>
-                ]} />
+                        <div key={1} className="cuandro-inf-soluciones">
+                            <p className="titulo-inf-soluciones">White Glove Delivery</p>
+                            <p>Cavia unlike cualquier otro servicio.
+                                Disfruta la verdadera unboxin experience:
+                                Abrir una caja de CAVIA es una experiencia premium en cada detalle.
+                                La envoltura, los aromas y la presentación... simplemente inigualables.
+                            </p>
+                        </div>
+                    ]} />
             </div>
 
             <div className="contenedor-boton-soluciones">
@@ -88,7 +89,6 @@ export default function Soluciones() {
             <div className="fondo-imagenes-soluciones"></div>
             <div className="contenedor-inf-soluciones">
                 <div></div>
-     
                 <Image
                     src="/Soluciones/div5-1.png"
                     alt="Logo"
@@ -105,22 +105,8 @@ export default function Soluciones() {
                 <div className="graph-linea-soluciones opacity-0" />
                 <div className="graph-linea-soluciones" />
             </div>
-            <div className="contenedor-lineas-abajo2-soluciones">
-                <div className="graph-linea-soluciones opacity-0" />
-                <div className="graph-linea-soluciones" />
-                <div className="graph-linea-soluciones" />
-                <div className="graph-linea-soluciones" />
-                <div className="graph-linea-soluciones" />
-            </div>
-            <div className="contenedor-abajo-horizontal-soluciones">
-                <div className=" abajo-horizontal-soluciones">
-                    <div className="graph-linea-horizontal-proceso opacity-0" />
-                    <div className="graph-linea-horizontal-proceso" />
-                    <div className="graph-linea-horizontal-proceso" />
-                    <div className="graph-linea-horizontal-proceso" />
-                </div>
-
-            </div>
+  
+          
 
         </section>
     )

@@ -49,7 +49,17 @@
     .img1-proceso {
         @apply z-20 relative mx-auto my-auto p-5 max-h-[90%] max-w-[90%]
     }
+  .img2-proceso {
+        @apply hidden
+    }
 
+    .img3-proceso {
+        @apply hidden
+    }
+
+    .img4-proceso {
+        @apply hidden
+    }
     /* #endregion */
 
 }
@@ -93,7 +103,8 @@
 
     /* #region IMAGENES */
     .contenedor-imagenes-proceso {
-        @apply flex flex-row py-[5%] bg-[var(--foreground)] mt-10
+        @apply bg-[var(--foreground)] 
+        grid grid-cols-2  mx-auto my-auto  translate-y-[10%] absolute w-full
     }
 
 
@@ -102,15 +113,16 @@
     }
 
     .img2-proceso {
-        @apply z-20 relative mx-auto my-auto p-5 max-h-[90%] max-w-[90%]
+        @apply hidden
     }
 
+
     .img3-proceso {
-        @apply z-20 relative mx-auto my-auto p-5 max-h-[90%] max-w-[90%]
+        @apply hidden
     }
 
     .img4-proceso {
-        @apply z-20 relative mx-auto my-auto p-5 max-h-[90%] max-w-[90%]
+        @apply hidden
     }
 
     /* #endregion */
@@ -207,7 +219,7 @@
 
     /* #region IMAGENES */
     .contenedor-imagenes-proceso {
-        @apply grid grid-cols-5  mx-auto my-auto overflow-hidden translate-y-[50%] absolute
+        @apply grid grid-cols-2  mx-auto my-auto overflow-hidden translate-y-[12%] absolute w-full
     }
 
     .fondo-imagenes-proceso {
@@ -215,15 +227,16 @@
     }
 
     .img1-proceso {
-        @apply z-20 relative col-span-2 mx-auto my-auto p-15 
+        @apply z-20 relative mx-auto my-auto p-5
     }
 
-    .img2-proceso {
-        @apply z-20 relative mx-auto my-auto p-5 
+     .img2-proceso {
+        @apply hidden
     }
+
 
     .img3-proceso {
-        @apply hidden 
+        @apply hidden
     }
 
     .img4-proceso {

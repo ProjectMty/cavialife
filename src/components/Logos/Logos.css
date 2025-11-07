@@ -1,0 +1,74 @@
+ @reference "tailwindcss";
+
+@media (min-width: 0px) and (max-width: 1024px){
+     .section-Logos {
+         @apply w-[full] h-[600px] bg-[var(--background)] overflow-visible font-[MinionPro] relative
+     }
+
+     /* #region LOGOS */
+     .contenedor-logos {
+         @apply grid grid-cols-2 w-[100%] mx-auto 
+     }
+
+     .contenedor-imagen-Logos {
+         @apply content-center items-center justify-center mx-auto my-auto h-[100px] overflow-hidden
+     }
+
+     .img-Logos {
+         @apply max-h-[50%] max-w-[100%]
+     }
+
+     /* #endregion */
+
+   
+}
+@media (min-width: 1025px){
+     .section-Logos {
+         @apply w-[full] h-[600px] bg-[var(--background)] overflow-visible font-[MinionPro] relative
+     }
+
+     /* #region LOGOS */
+     .contenedor-logos {
+         @apply grid grid-cols-4 w-[60%] mx-auto  translate-y-[20%]
+     }
+
+     .contenedor-imagen-Logos {
+         @apply content-center items-center justify-center mx-auto my-auto h-[150px] overflow-hidden
+     }
+
+     .img-Logos {
+         @apply max-h-[80%] max-w-[100%]
+     }
+
+     /* #endregion */
+
+     /* #region GRAFICOS */
+     .contenedor-lineas-Logos {
+         @apply absolute inset-0 z-0 grid grid-cols-6 mx-[5%] 
+     }
+
+
+     .grafico-linea-Logos {
+         @apply h-[90%] bg-[var(--graph-green)] w-[2px] justify-self-auto
+     }
+
+     .linea-oculta-Logos {
+         @apply opacity-0
+     }
+
+     .contenedor-lineas-horizontales-Logos {
+         @apply absolute inset-0 z-0 flex flex-col justify-end h-[10%]
+     }
+
+     .transladar-lineas-horizontales-Logos{
+         @apply grid grid-cols-5 h-[100%] items-end translate-y-[900%]
+     }
+
+     .grafico-horizontal-Logos {
+         @apply h-[2px] bg-[var(--graph-green)] w-full bottom-0 left-0
+     }
+
+     /* #endregion */
+
+}
+

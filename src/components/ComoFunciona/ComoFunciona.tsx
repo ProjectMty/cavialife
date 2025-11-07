@@ -6,7 +6,7 @@ import ShowAnimate from "@/animate/ShowAnimate";
 
 export default function ComoFunciona() {
     return (
-        <section className="section-funciona">
+        <section id="ComoFunciona" className="section-funciona">
             {/* #region GRAFICOS */}
             <div className="contenedor-lineas-funciona">
                 <div className="graph-linea-funciona linea-oculta" />

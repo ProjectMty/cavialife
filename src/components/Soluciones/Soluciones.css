@@ -157,7 +157,7 @@
     
     /* #region CONTENIDO */
     .section-soluciones {
-        @apply w-[full] h-[1200px] bg-[var(--background)] overflow-hidden font-[MinionPro] relative 
+        @apply w-[full] h-[1200px] bg-[var(--background)] overflow-visible font-[MinionPro] relative 
     }
 
     .contenedor-titulo-soluciones {
@@ -370,7 +370,7 @@
     }
 
     .img-soluciones {
-        @apply z-20 relative col-span-3 scale-125 translate-y-[15%] mx-auto
+        @apply z-20 relative col-span-3 scale-105  mx-auto
     }
 
     /* #endregion */

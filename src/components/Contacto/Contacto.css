@@ -1,0 +1,151 @@
+ @reference "tailwindcss";
+
+@media (min-width: 0px) and (max-width: 1024px){
+     /* #region Contenido */
+     .section-Contacto {
+         @apply w-full h-[1100px] bg-[var(--foreground)] overflow-hidden font-[MinionPro] relative 
+     }
+
+     .contenedor-Contacto {
+         @apply grid grid-cols-1 w-[100%] mx-auto
+     }
+
+     /* #endregion */
+
+     /* #region FORMS */
+     .contenedor-forms-Contacto {
+         @apply  p-10 flex flex-col gap-10 relative z-50
+     }
+
+     .titulo-forms-Contacto {
+         @apply text-[55px] text-[var(--text-green)] text-center
+     }
+
+     .contenedor-input-Contacto {
+         @apply w-[100%] flex flex-col
+     }
+
+     .contenedor-input-2-Contacto {
+         @apply w-[100%] flex flex-col col-span-3
+     }
+
+     .label-Contacto {
+         @apply text-[20px] mb-5
+     }
+
+     .input-Contacto {
+         @apply border-[var(--input-green)] border-b-2 mb-10 h-[30px]
+     }
+
+     .input-2-Contacto {
+         @apply border-[var(--input-green)] border-b-2 border-t-2 mb-1
+     }
+
+     .boton-forms-Contacto {
+         @apply bg-[var(--buton-green)] w-[90%] h-[60px] text-[var(--background)] text-[22px] shadow-lg justify-center
+         mx-auto
+     }
+
+     /* #endregion */
+
+     /* #region INFORMACION */
+     .contenedor-informacion-Contacto {
+         @apply grid grid-cols-2 py-5 px-5 relative 
+     }
+
+  
+     .titulo-informacion-Contacto {
+         @apply text-[35px] leading-8 w-[90%] mb-3 mx-auto
+     }
+
+     .parrafo-Contacto {
+         @apply text-[19px]
+     }
+
+     /* #endregion */
+
+  
+}
+
+@media (min-width: 1025px) {
+         /* #region Contenido */
+     .section-Contacto {
+         @apply w-full h-[550px] bg-[var(--foreground)] overflow-hidden font-[MinionPro] relative 
+     }
+
+     .contenedor-Contacto {
+         @apply grid grid-cols-4 w-[55%] mx-auto
+     }
+
+     /* #endregion */
+
+     /* #region FORMS */
+     .contenedor-forms-Contacto {
+         @apply col-span-3 p-10 grid-cols-3 grid gap-10 relative z-50
+     }
+
+     .titulo-forms-Contacto {
+         @apply text-[55px] text-[var(--text-green)] col-span-3
+     }
+
+     .contenedor-input-Contacto {
+         @apply w-[100%] flex flex-col
+     }
+
+     .contenedor-input-2-Contacto {
+         @apply w-[100%] flex flex-col col-span-3
+     }
+
+     .label-Contacto {
+         @apply text-[20px] mb-5
+     }
+
+     .input-Contacto {
+         @apply border-[var(--input-green)] border-b-2 mb-10 h-[30px]
+     }
+
+     .input-2-Contacto {
+         @apply border-[var(--input-green)] border-b-2 border-t-2 mb-1
+     }
+
+     .boton-forms-Contacto {
+         @apply bg-[var(--buton-green)] col-span-2 w-[70%] h-[60px] text-[var(--background)] text-[22px] shadow-lg justify-center
+     }
+
+     /* #endregion */
+
+     /* #region INFORMACION */
+     .contenedor-informacion-Contacto {
+         @apply grid grid-rows-2 py-5 pl-12 relative items-center
+     }
+
+     .informacion-Contacto {
+         @apply flex
+     }
+
+     .titulo-informacion-Contacto {
+         @apply text-[35px] leading-8 w-[80%] mb-3
+     }
+
+     .parrafo-Contacto {
+         @apply text-[19px]
+     }
+
+     /* #endregion */
+
+     /* #region GRAFICOS */
+     .contenedor-fondo-Contacto {
+         @apply absolute inset-0 z-0 grid grid-cols-5 h-full
+     }
+
+     .grafico-linea-Contacto {
+         @apply h-full bg-[var(--graph-white)] w-[2px]
+     }
+
+     .oculto-Contacto {
+         @apply opacity-0
+     }
+
+     /* #endregion */
+
+}
