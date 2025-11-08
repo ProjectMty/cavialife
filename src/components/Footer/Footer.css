@@ -3,7 +3,7 @@
 @media (min-width: 0px) and (max-width: 1024px){
      /* #region Contenido */
      .section-Footer {
-         @apply w-full h-[300px] bg-[var(--background)] overflow-hidden font-[MinionPro] relative
+         @apply w-full h-[500px] bg-[var(--background)] overflow-hidden font-[MinionPro] relative
      }
 
      .contenedor-Footer {
@@ -11,14 +11,14 @@
      }
 
      .logo-Footer{
-        @apply w-[10%] mx-auto mt-20
+        @apply w-[20%] mx-auto mt-20
      }
      /* #endregion */
 
         /* #region TEXTO */
      .contenedor-vinculos-Footer{
-        @apply relative flex-col flex gap-1 h-[30px] w-[100%] mx-auto
-        mt-10  items-center justify-center
+        @apply relative flex-col flex gap-1 h-[100px] w-[100%] mx-auto
+        translate-y-[80%]  items-center justify-center
      }
 
      .linea-grafica-Footer{
@@ -30,7 +30,7 @@
      }
 
      .rights-Footer{
-        @apply text-[20px] font-extralight text-[#5c5c5c]
+        @apply text-[20px] font-extralight text-[#5c5c5c] mt-10
      }
      /* #endregion */
  
@@ -61,7 +61,7 @@
      }
 
      .vinculo-Footer{
-        @apply text-[25px]
+        @apply text-[25px] 
      }
 
      .rights-Footer{
