@@ -15,8 +15,9 @@ export async function POST(req: Request) {
         const body = await req.json();
         const { nombre, telefono, correo, desc } = body;
         const destinatarios = [
-            // "info@cavialife.com",
-            "it03@cargomty.com"
+            "info@cavialife.com",
+            "issac@cargomty.com"
+            // "it03@cargomty.com"
         ];
 
         const email = await resend.emails.send({
