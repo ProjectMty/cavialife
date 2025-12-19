@@ -26,6 +26,21 @@ export default function Contacto() {
 
     };
 
+    // Limitar a 15 caracteres
+    const handleChangeNombre = (e: React.ChangeEvent<HTMLInputElement>) => {
+        let valor = e.target.value;
+
+        valor = valor.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ\s]/g, "");
+
+        valor = valor.replace(/\s{2,}/g, " ");
+
+        valor = valor.slice(0, 20);
+        valor = valor
+            .toLowerCase()
+            .replace(/\b\w/g, (letra) => letra.toUpperCase());
+
+        SetNombre(valor);
+    }
 
     const handleEnvioDatos = async () => {
         try {
@@ -107,7 +122,7 @@ export default function Contacto() {
                         <input type="text" name="name" id="ContactName" className="input-Contacto"
                             value={nombre}
                             placeholder="Nombre"
-                            onChange={(e) => SetNombre(e.target.value)} />
+                            onChange={handleChangeNombre} />
                     </div>
                     <div className="contenedor-input-Contacto">
                         <label htmlFor="ContactEmail" className="label-Contacto">Email: </label>
