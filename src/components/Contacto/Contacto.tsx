@@ -42,6 +42,36 @@ export default function Contacto() {
         SetNombre(valor);
     }
 
+    const handleChangeCorreo = (e: React.ChangeEvent<HTMLInputElement>) => {
+        let valor = e.target.value;
+
+        valor = valor.replace(/\s+/g, "");
+
+        valor = valor.toLowerCase();
+
+        valor = valor.slice(0, 40);
+
+        SetCorreo(valor);
+    };
+    const validarCorreo = (correo: string): boolean => {
+        const regexCorreo =
+            /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+
+        return regexCorreo.test(correo);
+    };
+
+    const handleChangeDesc = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+        let valor = e.target.value;
+
+        valor = valor.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ\s]/g, "");
+
+        valor = valor.replace(/\s{2,}/g, " ");
+
+        valor = valor.slice(0, 100);
+    
+        SetDesc(valor);
+    }
+
     const handleEnvioDatos = async () => {
         try {
             const body = {
@@ -61,7 +91,27 @@ export default function Contacto() {
                 });
                 return;
             }
-            console.log("Enviando correo con datos:", { name, telefono, correo, desc });
+
+            if (telefono.length < 14) {
+                Swal.fire({
+                    title: "Campos incompletos",
+                    text: "Por favor ingresa un numero telefónico válido",
+                    icon: "warning",
+                    timer: 3000,
+                });
+                return;
+            }
+
+            if (!validarCorreo(correo)) {
+                Swal.fire({
+                    title: "Campos incompletos",
+                    text: "Por favor ingresa un correo electronico válido",
+                    icon: "warning",
+                    timer: 3000,
+                });
+                return;
+            }
+
             // Enviar al backend
             const response = await fetch("/api/EnvioDatos", {
                 method: "POST",
@@ -129,7 +179,7 @@ export default function Contacto() {
                         <input type="text" name="name" id="ContactEmail" className="input-Contacto"
                             value={correo}
                             placeholder="Ejemplo@correo.com"
-                            onChange={(e) => SetCorreo(e.target.value)} />
+                            onChange={handleChangeCorreo} />
                     </div>
                     <div className="contenedor-input-Contacto">
                         <label htmlFor="ContactPhone" className="label-Contacto">Número de teléfono: </label>
@@ -144,7 +194,7 @@ export default function Contacto() {
                         <textarea id="ContactDescr" className="input-2-Contacto  resize-none"
                             value={desc}
                             placeholder=""
-                            onChange={(e) => SetDesc(e.target.value)}
+                            onChange={handleChangeDesc}
                         />
                     </div>
                     <button className="boton-forms-Contacto" onClick={handleEnvioDatos}>Cotiza Ahora</button>

@@ -1,4 +1,4 @@
-import { Head, Body, Container, Heading, Html, Img, Preview, Section, Tailwind, Text } from '@react-email/components';
+import { Head, Body, Container, Heading, Html, Preview, Section, Tailwind, Text } from '@react-email/components';
 
 interface EmailProps {
     nombre?: string;
@@ -68,7 +68,7 @@ const EmailTemplate = ({
                         </Text>
                         <Text className="text-gray-700 text-base leading-relaxed mb-4 text-center">
                             Descripción:{" "}
-                            <span className="font-bold text-[#013d36]">{desc}</span>.
+                            <span className="font-bold text-[#013d36] ">{desc}</span>.
 
                         </Text>
 
